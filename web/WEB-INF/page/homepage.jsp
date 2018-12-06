@@ -1,7 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<%--
+  Created by IntelliJ IDEA.
+  User: 沙元毅
+  Date: 2018/12/6
+  Time: 11:10
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Title</title>
     <style>
         .text0{
@@ -117,9 +123,11 @@
 
         <div class="table1" align="center">
 
-          <h1>欢迎!username</h1>
+            <h1>欢迎!username</h1>
         </div>
 
     </div>
 </div>
+
 </body>
+</html>
