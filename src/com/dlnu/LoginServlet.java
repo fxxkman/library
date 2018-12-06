@@ -42,7 +42,7 @@ public class LoginServlet extends HttpServlet {
 
             request.setAttribute("msg","用户名或密码不正确");
             //登陆失败后,转发到登陆失败的页面
-            request.getRequestDispatcher("WEB-INF/pages/error.jsp").forward(request,response);
+            request.getRequestDispatcher("WEB-INF/page/error.jsp").forward(request,response);
         }
     }
 

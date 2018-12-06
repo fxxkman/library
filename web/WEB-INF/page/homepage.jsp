@@ -75,11 +75,13 @@
     </style>
 </head>
 <body>
+<%String M = (String) session.getAttribute("user");%>
+
 <div class="div1">
     <big> <strong class="text0">后台管理系统 </strong></big>
 
     <strong class="text1"> <a href="" class="a0">修改密码</a>
-        <a href="" class="a0">安全退出</a></strong>
+        <a href="/loginView" class="a0">安全退出</a></strong>
 </div>
 <!--第一行-->
 
@@ -123,7 +125,7 @@
 
         <div class="table1" align="center">
 
-            <h1>欢迎!username</h1>
+            <h1>欢迎! <%=M%></h1>
         </div>
 
     </div>
