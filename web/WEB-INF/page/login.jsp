@@ -37,7 +37,7 @@
 </div><!--图片:管理中心-->
 
 <div  class="div0" align="center">
-    <form action="">
+    <form action="login">
         <br><br>
         账&emsp;号: <input type="text" name="username">
         <br>
