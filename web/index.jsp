@@ -12,5 +12,7 @@
   </head>
   <body>
   $END$
+
+  <a href="/loginView">点击登录</a>
   </body>
 </html>
