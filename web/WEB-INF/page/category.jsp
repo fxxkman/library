@@ -1,8 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<%--
+  Created by IntelliJ IDEA.
+  User: 沙元毅
+  Date: 2018/12/6
+  Time: 14:20
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>图书类别管理</title>
+
     <style>
         .text0{
             color: #3152eb;
@@ -77,38 +84,39 @@
 
 
     </style>
+
 </head>
 <body>
+
 <div class="div1">
     <big> <strong class="text0">后台管理系统 </strong></big>
 
     <strong class="text1"> <a href="" class="a0">修改密码</a>
-        <a href="" class="a0">安全退出</a></strong>
+        <a href="/loginView" class="a0">安全退出</a></strong>
 </div>
+<!--第一行-->
 
-<div class="xian0"></div>
+<div class="xian0">
+
+</div><!--分割线-->
 
 <div class="div2">
 
     <p class="p0">  &emsp;&emsp;&emsp;图书管理系统</p>
     <p>&emsp;</p>
-</div>
-
-
+</div><!--第二行 图书管理系统-->
 
 <div>
 
-
     <div class="div3">
         &emsp;&emsp;
-        <img src="../../picture/小电脑.png" height="24" width="22"/>
-        管理首页
-
+        <a href="/home" style="color: #ebebeb"> <img src="../../picture/小电脑.png" height="24" width="22"/>
+            管理首页</a>
 
         <div class="div4">
-            <a href=""><img src="../../picture/1管理员设置.png" height="32" width="150"/></a>
+            <a href="/Admit"><img src="../../picture/1管理员设置.png" height="32" width="150"/></a>
             <a href=""><img src="../../picture/2后台登录日志.png" height="32" width="150"/></a>
-            <a href=""><img src="../../picture/3图书类别管理.png" height="32" width="150"/></a>
+            <a href="/category"><img src="../../picture/3图书类别管理.png" height="32" width="150"/></a>
             <a href=""><img src="../../picture/4图书信息管理.png" height="32" width="150"/></a>
             <a href=""><img src="../../picture/5增加图书信息.png" height="32" width="150"/></a>
             <a href=""><img src="../../picture/6图书信息查询.png" height="32" width="150"/></a>
@@ -119,15 +127,14 @@
             <a href=""><img src="../../picture/11读者借阅查询.png" height="32" width="150"/></a>
 
 
-        </div>
-
+        </div><!--左侧选框-->
 
     </div>
 
 
     <div class="table0">
 
-        <div align="center">
+        <div class="table1" align="center">
 
             <table border="1" width="100%">
                 <tr bgcolor="#0b82a0">
@@ -179,9 +186,12 @@
                     <td><a href="">删除</a></td>
                 </tr>
             </table>
-        </div>
-    </div>
 
+
+
+        </div>
+
+    </div>
     <div class="div5">
         <table border="1" width="100%">
             <tr>
@@ -192,7 +202,9 @@
         </table>
 
     </div>
-</div>
 
+
+
+</div>
 </body>
 </html>

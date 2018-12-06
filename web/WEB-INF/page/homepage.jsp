@@ -99,13 +99,13 @@
 
     <div class="div3">
         &emsp;&emsp;
-        <img src="../../picture/小电脑.png" height="24" width="22"/>
-        管理首页
+        <a href="/home"> <img src="../../picture/小电脑.png" height="24" width="22"/>
+        管理首页</a>
 
         <div class="div4">
             <a href="/Admit"><img src="../../picture/1管理员设置.png" height="32" width="150"/></a>
             <a href=""><img src="../../picture/2后台登录日志.png" height="32" width="150"/></a>
-            <a href=""><img src="../../picture/3图书类别管理.png" height="32" width="150"/></a>
+            <a href="/category"><img src="../../picture/3图书类别管理.png" height="32" width="150"/></a>
             <a href=""><img src="../../picture/4图书信息管理.png" height="32" width="150"/></a>
             <a href=""><img src="../../picture/5增加图书信息.png" height="32" width="150"/></a>
             <a href=""><img src="../../picture/6图书信息查询.png" height="32" width="150"/></a>
@@ -126,6 +126,9 @@
         <div class="table1" align="center">
 
             <h1>欢迎! <%=M%></h1>
+
+
+
         </div>
 
     </div>
