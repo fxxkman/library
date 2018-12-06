@@ -23,7 +23,7 @@
 <body>
 
 <div style="position:absolute;width: 100%;height: 100%;z-index: -1">
-    <img src="../../bg.jpg" height="100%" width="100%"/>
+    <img src="../../picture/bg.jpg" height="100%" width="100%"/>
 </div><!--背景-->
 
 <div align="center">
@@ -33,7 +33,7 @@
 </div><!--文字:图书管理系统-->
 
 <div align="center">
-    <img src="/index_hz01.gif" height="64" width="427"/>
+    <img src="/picture/index_hz01.gif" height="64" width="427"/>
 </div><!--图片:管理中心-->
 
 <div  class="div0" align="center">
@@ -43,12 +43,12 @@
         <br>
         密&emsp;码: <input type="password" name="password">
         <br>
-        <input type="image" src="../../index_hz04.gif" name="submit" >
+        <input type="image" src="../../picture/index_hz04.gif" name="submit" >
     </form>
 </div><%--登陆框--%>
 
 <div align="center">
-    <img src="/index_hz05.gif" alt="">
+    <img src="/picture/index_hz05.gif" alt="">
 </div>
 <%--图片:登陆框下边框--%>
 
