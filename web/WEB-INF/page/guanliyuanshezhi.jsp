@@ -2,13 +2,13 @@
   Created by IntelliJ IDEA.
   User: 沙元毅
   Date: 2018/12/6
-  Time: 11:10
+  Time: 13:43
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>管理员设置</title>
     <style>
         .text0{
             color: #3152eb;
@@ -71,17 +71,20 @@
 
         }
 
+        .tableguanliyuan{
+            width: 400px;
+            border: 2px black solid;
+        }
+
 
     </style>
 </head>
 <body>
-<%String M = (String) session.getAttribute("user");%>
-
 <div class="div1">
     <big> <strong class="text0">后台管理系统 </strong></big>
 
     <strong class="text1"> <a href="" class="a0">修改密码</a>
-        <a href="/loginView" class="a0">安全退出</a></strong>
+        <a href="" class="a0">安全退出</a></strong>
 </div>
 <!--第一行-->
 
@@ -103,7 +106,7 @@
         管理首页
 
         <div class="div4">
-            <a href="/Admit"><img src="../../picture/1管理员设置.png" height="32" width="150"/></a>
+            <a href=""><img src="../../picture/1管理员设置.png" height="32" width="150"/></a>
             <a href=""><img src="../../picture/2后台登录日志.png" height="32" width="150"/></a>
             <a href=""><img src="../../picture/3图书类别管理.png" height="32" width="150"/></a>
             <a href=""><img src="../../picture/4图书信息管理.png" height="32" width="150"/></a>
@@ -124,12 +127,37 @@
     <div class="table0">
 
         <div class="table1" align="center">
+            <table class="tableguanliyuan">
+                <th bgcolor="#205483" style="color: #ebebeb">
+                    增加/修改管理员
+                </th>
+                <tr align="center"><td>管理员名: <input type="text"></td></tr>
+                <tr align="center"><td>登陆密码: <input type="text" ></td></tr>
+                <tr align="center"><td>操作类型: <input type="radio" name="caozuoleixing">增加 &emsp;
+                    <input type="radio" name="caozuoleixing">修改
+                </td></tr>
+                <tr align="center"><td><input type="submit" value="确定">
+                    <input type="reset" value="重置" ></td></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
 
-            <h1>欢迎! <%=M%></h1>
+
+
+
+
+
+
+
+
+
+            </table>
+
+
         </div>
 
     </div>
 </div>
-
 </body>
 </html>
