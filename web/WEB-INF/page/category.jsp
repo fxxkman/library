@@ -120,9 +120,9 @@
             <a href=""><img src="../../picture/4图书信息管理.png" height="32" width="150"/></a>
             <a href=""><img src="../../picture/5增加图书信息.png" height="32" width="150"/></a>
             <a href=""><img src="../../picture/6图书信息查询.png" height="32" width="150"/></a>
-            <a href=""><img src="../../picture/7会员信息管理.png" height="32" width="150"/></a>
+            <a href="/member"><img src="../../picture/7会员信息管理.png" height="32" width="150"/></a>
             <a href=""><img src="../../picture/8增加会员信息.png" height="32" width="150"/></a>
-            <a href=""><img src="../../picture/9图书借阅管理.png" height="32" width="150"/></a>
+            <a href="/lending"><img src="../../picture/9图书借阅管理.png" height="32" width="150"/></a>
             <a href=""><img src="../../picture/10增加借阅信息.png" height="32" width="150"/></a>
             <a href=""><img src="../../picture/11读者借阅查询.png" height="32" width="150"/></a>
 
