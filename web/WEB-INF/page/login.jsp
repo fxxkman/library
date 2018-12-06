@@ -41,7 +41,7 @@
         <br><br>
         账&emsp;号: <input type="text" name="username">
         <br>
-        密&emsp;码: <input type="password" name="password">
+        密&emsp;码: <input type="password" name="pwd">
         <br>
         <input type="image" src="../../picture/index_hz04.gif" name="submit" >
     </form>
