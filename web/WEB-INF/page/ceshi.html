@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .text0{
+            color: #3152eb;
+            font-size: 30px;
+            background-color: #ebebeb;
+        }
+
+        .div1{
+            background-color: #205483;
+            margin: 0px 0px -16px 0px;
+        }
+
+        .a0{
+            color: white;
+        }
+
+        .div2{
+            background-color: #0b82a0;
+            margin: 0px 0px -10px 0px;
+            padding: 10px 0px 0px 0px;
+        }
+
+        .p0{
+            color: #e6ffe4;
+        }
+
+        .div3{
+            margin: -40px 0px 0px 0px;
+            background-color: #0b82a0;
+            width: 13%;
+            height: 660px;
+            float: left;
+            box-sizing: border-box;
+
+        }
+
+        .div4{
+            margin: 20px;
+            width: 13%;
+            /*float: left;*/
+            box-sizing: border-box;
+        }
+        .xian{
+            border: 2px white solid;
+            height: 1px;
+        }
+
+        .text1{
+            float: right;
+        }
+
+        .table0{
+            float: right;
+            width: 87%;
+            height: 290px;
+            box-sizing: border-box;
+            font-size: 18px;
+            border: 2px blue solid;
+            margin: -7px 0px 0px 0px;
+        }
+
+        .div5{
+            float: right;
+            width: 87%;
+            height: 40px;
+            box-sizing: border-box;
+            font-size: 18px;
+            border: 2px blue solid;
+            margin: 3px 0px 0px 0px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="div1">
+    <big> <strong class="text0">后台管理系统 </strong></big>
+
+    <strong class="text1"> <a href="" class="a0">修改密码</a>
+        <a href="/loginView" class="a0">安全退出</a></strong>
+</div>
+<!--第一行-->
+
+<div class="xian0">
+
+</div><!--分割线-->
+
+<div class="div2">
+
+    <p class="p0">  &emsp;&emsp;&emsp;图书管理系统</p>
+    <p>&emsp;</p>
+</div><!--第二行 图书管理系统-->
+
+<div>
+
+    <div class="div3">
+        &emsp;&emsp;
+        <a href="/home" style="color: #ebebeb"> <img src="../../picture/小电脑.png" height="24" width="22"/>
+            管理首页</a>
+
+        <div class="div4">
+            <a href="/Admit"><img src="../../picture/1管理员设置.png" height="32" width="150"/></a>
+            <a href=""><img src="../../picture/2后台登录日志.png" height="32" width="150"/></a>
+            <a href="/category"><img src="../../picture/3图书类别管理.png" height="32" width="150"/></a>
+            <a href=""><img src="../../picture/4图书信息管理.png" height="32" width="150"/></a>
+            <a href=""><img src="../../picture/5增加图书信息.png" height="32" width="150"/></a>
+            <a href=""><img src="../../picture/6图书信息查询.png" height="32" width="150"/></a>
+            <a href="/member"><img src="../../picture/7会员信息管理.png" height="32" width="150"/></a>
+            <a href=""><img src="../../picture/8增加会员信息.png" height="32" width="150"/></a>
+            <a href="/lending"><img src="../../picture/9图书借阅管理.png" height="32" width="150"/></a>
+            <a href=""><img src="../../picture/10增加借阅信息.png" height="32" width="150"/></a>
+            <a href=""><img src="../../picture/11读者借阅查询.png" height="32" width="150"/></a>
+
+
+        </div><!--左侧选框-->
+
+    </div>
+
+
+    <div class="table0">
+
+        <div class="table1" align="center">
+
+            <table border="1">
+                <thead>
+                <tr>
+                    <td>序号</td>
+                    <td>图书类别</td>
+                    <td>录入时间</td>
+                    <td>删除</td>
+                </tr>
+                <thead>
+                <tbody id="tb">
+                <tr id="1st">
+                    <td>张</td>
+                    <td>三</td>
+                    <td>
+                        <input type="button" value="Del" onclick="del(this)"></td>
+                </tr>
+                </tbody>
+            </table>
+
+
+
+
+        </div>
+
+    </div>
+
+    <div>
+        <input type="text" style="width: 200px" id="category">
+
+        <input type="button" value="提交" onclick="add()">
+    </div>
+
+</div>
+</body>
+</html>
+
+<script>
+    function add() {
+        var trObj = document.createElement("tr");
+        trObj.id = new Date().getTime();
+        trObj.innerHTML = "<td><p name='firstName'></p></td>" +
+            "<td><p name='lastName'></p></td>" +
+            "<td><input type='button' value='Add' onclick='add()'> <input type='button' value='Del' onclick='del(this)'></td>";
+        document.getElementById("tb").appendChild(trObj);
+    }
+
+    function del(obj) {
+        var trId = obj.parentNode.parentNode.id;
+        var trObj = document.getElementById(trId);
+        document.getElementById("tb").removeChild(trObj);
+    }
+</script>
