@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>后台管理系统</title>
-
+    <title>图书类别管理</title>
     <style>
-
         .text0{
             color: #3152eb;
             font-size: 30px;
@@ -34,14 +32,17 @@
         .div3{
             margin: -40px 0px 0px 0px;
             background-color: #0b82a0;
-            width: 190px;
+            width: 13%;
             height: 660px;
+            float: left;
             box-sizing: border-box;
+
         }
 
         .div4{
             margin: 20px;
-            width: 150px;
+            width: 13%;
+            /*float: left;*/
             box-sizing: border-box;
         }
         .xian{
@@ -53,13 +54,31 @@
             float: right;
         }
 
+        .table0{
+            float: right;
+            width: 87%;
+            height: 290px;
+            box-sizing: border-box;
+            font-size: 18px;
+            border: 2px blue solid;
+            margin: -7px 0px 0px 0px;
+        }
+
+        .div5{
+            float: right;
+            width: 87%;
+            height: 40px;
+            box-sizing: border-box;
+            font-size: 18px;
+            border: 2px blue solid;
+            margin: 3px 0px 0px 0px;
+        }
+
 
 
     </style>
-
 </head>
 <body>
-
 <div class="div1">
     <big> <strong class="text0">后台管理系统 </strong></big>
 
@@ -67,7 +86,7 @@
         <a href="" class="a0">安全退出</a></strong>
 </div>
 
-<div class="xian"></div>
+<div class="xian0"></div>
 
 <div class="div2">
 
@@ -76,91 +95,104 @@
 </div>
 
 
-<div class="div3">
-    &emsp;&emsp;
-    <img src="../../picture/小电脑.png" height="24" width="22"/>
-    管理首页
 
-    <div class="div4">
-        <a href=""><img src="../../picture/1管理员设置.png" height="32" width="150"/></a>
-        <a href=""><img src="../../picture/2后台登录日志.png" height="32" width="150"/></a>
-        <a href=""><img src="../../picture/3图书类别管理.png" height="32" width="150"/></a>
-        <a href=""><img src="../../picture/4图书信息管理.png" height="32" width="150"/></a>
-        <a href=""><img src="../../picture/5增加图书信息.png" height="32" width="150"/></a>
-        <a href=""><img src="../../picture/6图书信息查询.png" height="32" width="150"/></a>
-        <a href=""><img src="../../picture/7会员信息管理.png" height="32" width="150"/></a>
-        <a href=""><img src="../../picture/8增加会员信息.png" height="32" width="150"/></a>
-        <a href=""><img src="../../picture/9图书借阅管理.png" height="32" width="150"/></a>
-        <a href=""><img src="../../picture/10增加借阅信息.png" height="32" width="150"/></a>
-        <a href=""><img src="../../picture/11读者借阅查询.png" height="32" width="150"/></a>
+<div>
+
+
+    <div class="div3">
+        &emsp;&emsp;
+        <img src="../../picture/小电脑.png" height="24" width="22"/>
+        管理首页
+
+
+        <div class="div4">
+            <a href=""><img src="../../picture/1管理员设置.png" height="32" width="150"/></a>
+            <a href=""><img src="../../picture/2后台登录日志.png" height="32" width="150"/></a>
+            <a href=""><img src="../../picture/3图书类别管理.png" height="32" width="150"/></a>
+            <a href=""><img src="../../picture/4图书信息管理.png" height="32" width="150"/></a>
+            <a href=""><img src="../../picture/5增加图书信息.png" height="32" width="150"/></a>
+            <a href=""><img src="../../picture/6图书信息查询.png" height="32" width="150"/></a>
+            <a href=""><img src="../../picture/7会员信息管理.png" height="32" width="150"/></a>
+            <a href=""><img src="../../picture/8增加会员信息.png" height="32" width="150"/></a>
+            <a href=""><img src="../../picture/9图书借阅管理.png" height="32" width="150"/></a>
+            <a href=""><img src="../../picture/10增加借阅信息.png" height="32" width="150"/></a>
+            <a href=""><img src="../../picture/11读者借阅查询.png" height="32" width="150"/></a>
+
+
+        </div>
+
+
     </div>
 
 
-    <div >
-<table border="1" width="80%">
-    <tr bgcolor="#0b82a0">
-        <th>序号</th>
-        <th>书面类别</th>
-        <th>录入时间</th>
-        <th>删除</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>经济类图书</td>
-        <td>2016-05-27 15:02:39</td>
-        <td><a href="">删除</a></td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>军事类图书</td>
-        <td>2016-05-27 15:02:33</td>
-        <td><a href="">删除</a></td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>科技类图书</td>
-        <td>2016-05-27 15:02:24</td>
-        <td><a href="">删除</a></td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>哲学类图书</td>
-        <td>2016-05-27 15:02:16</td>
-        <td><a href="">删除</a></td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>自然科学类图书</td>
-        <td>2016-05-27 15:02:07</td>
-        <td><a href="">删除</a></td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>技术类图书</td>
-        <td>2016-05-26 11:39:56</td>
-        <td><a href="">删除</a></td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>人文类图书</td>
-        <td>2016-05-26 11:39:12</td>
-        <td><a href="">删除</a></td>
-    </tr>
-</table>
+    <div class="table0">
+
+        <div align="center">
+
+            <table border="1" width="100%">
+                <tr bgcolor="#0b82a0">
+                    <th>序号</th>
+                    <th>书面类别</th>
+                    <th>录入时间</th>
+                    <th>删除</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>经济类图书</td>
+                    <td>2016-05-27 15:02:39</td>
+                    <td><a href="">删除</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>军事类图书</td>
+                    <td>2016-05-27 15:02:33</td>
+                    <td><a href="">删除</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>科技类图书</td>
+                    <td>2016-05-27 15:02:24</td>
+                    <td><a href="">删除</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>哲学类图书</td>
+                    <td>2016-05-27 15:02:16</td>
+                    <td><a href="">删除</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>自然科学类图书</td>
+                    <td>2016-05-27 15:02:07</td>
+                    <td><a href="">删除</a></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>技术类图书</td>
+                    <td>2016-05-26 11:39:56</td>
+                    <td><a href="">删除</a></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>人文类图书</td>
+                    <td>2016-05-26 11:39:12</td>
+                    <td><a href="">删除</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="div5">
+        <table border="1" width="100%">
+            <tr>
+                <td>
+                    <div align="center">类别名称:<input type="text"><input type="submit" value="提交"></div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
 </div>
-
-<div align="right">
-    <table border="1" width="80%">
-        <tr>
-            <td>
-               <div align="center">类别名称:<input type="text"><input type="submit" value="提交"></div>
-            </td>
-        </tr>
-    </table>
-
-</div>
-
-
 
 </body>
 </html>
