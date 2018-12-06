@@ -155,9 +155,9 @@
     </div>
 
     <div>
-        <input type="text" style="width: 200px" id="category">
+        <input type="text" style="width: 200px" id="input">
 
-        <input type="button" value="提交" onclick="add()">
+        <input type="button" value="提交" id="button">
     </div>
 
 </div>
@@ -165,12 +165,20 @@
 </html>
 
 <script>
-    function add() {
+
+    var i=0;
+    var inp=document.getElementById("input");
+    var btn=document.getElementById("button");
+
+    btn.onclick=function () {
+
+        i=i+1;
         var trObj = document.createElement("tr");
         trObj.id = new Date().getTime();
-        trObj.innerHTML = "<td><p name='firstName'></p></td>" +
+
+        trObj.innerHTML = "<td><p name='firstName'> ${i}   </p></td>" +
             "<td><p name='lastName'></p></td>" +
-            "<td><input type='button' value='Add' onclick='add()'> <input type='button' value='Del' onclick='del(this)'></td>";
+            "<td> <input type='button' value='Del' onclick='del(this)'></td>";
         document.getElementById("tb").appendChild(trObj);
     }
 
